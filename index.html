@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading" id="firstHeading">S P L I</h1>
+        <h1 class="heading">T T E R</h1>
+        <div class="mainContainer">
+            <div class="mainLeftContainer">
+                <div class="left_first left_inside">
+                    <p>Bill Amount</p>
+                    <input type="number" class="info_input" value="100">
+                    
+                </div>
+                <div class="left_second left_inside">
+                    <p>Select Tip%</p>
+                    <div class="tip_percentage">
+                        <button class="percentage" value="5">5%</button>
+                        <button class="percentage" value="10">10%</button>
+                        <button class="percentage" value="15">15%</button>
+                        <button class="percentage" value="25">25%</button>
+                        <button class="percentage" value="50">50%</button>
+                        <input type="number" min="0" max="100" id="percentage_input" placeholder="Custom" >
+                    </div>
+                
+                </div>
+                <div class="left_third left_inside">
+                    <p>Number of People</p>
+                    <input type="number" min="1" class="info_input" value="1" id="people">
+                    
+                </div>
+            </div>
+
+            <div class="mainRightContainer">
+                <div class="right_top_container">
+                    <div class="tip_amount information">
+                        <div class="tip_left amount_info">
+                            <p>Tip Amount</p>
+                            <p class="normal_info">/person</p>
+                        </div>
+                        <div class="tip_right amount_display">
+                            <h1 id="tpp">0</h1>
+                        </div>
+                    </div>
+                    <div class="total_amount information">
+                        <div class="total_left amount_info">
+                            <p>Total</p>
+                            <p class="normal_info">/person</p>
+                        </div>
+                        <div class="total_right amount_display">
+                            <h1 id="total_per_person">0</h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right_bottom_container">
+                    <button id="resetButton">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
